@@ -24,14 +24,29 @@
                 <!-- Add icons to the links using the .nav-icon class
             with font-awesome or any other icon font library -->
                 <li class="nav-item">
-                    {{--  <a href="{{route('admin.dashboard')}}"
+                    <a href="{{route('admin.dashboard')}}"
                         class="nav-link {{ Route::currentRouteName() == 'admin.dashboard' ? 'active' : '' }}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p> Dashboard </p>
-                    </a>  --}}
+                    </a>
                 </li>
 
                 <li class="nav-header">Management</li>
+                <li class="nav-item has-treeview {{ Route::is('admin.user.*') ? 'menu-open' : '' }}">
+                    <a href="#" class="nav-link {{ Route::is('admin.user.*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-users"></i>
+                        <p>User Manager</p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                            <a href="{{ route('admin.user.index') }}" class="nav-link {{ Route::is('admin.user.*') ? 'active' : '' }}">
+                                <i class="fas fa-user-cog"></i>
+                                <p>User</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
 
                 <li class="nav-header">Short Link</li>

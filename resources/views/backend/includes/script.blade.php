@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="{{ asset('backend/plugins/toastr/toastr.min.js')}}">
 
 <script src="{{asset('backend/dist/js/custom.js')}}"></script>
-
+@stack('custom-style')
 
 <!-- AdminLTE App -->
 <script src="{{asset('backend/dist/js/adminlte.js')}}"></script>

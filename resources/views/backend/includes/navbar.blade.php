@@ -5,7 +5,7 @@
             <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href=""class="nav-link btn btn-primary btn-sm text-light"><i class="fas fa-snowflake fa-spin mr-2"></i> Cache Clear</a>
+            <a href="{{ Route('admin.cache.clear') }}"class="nav-link btn btn-primary btn-sm text-light"><i class="fas fa-snowflake fa-spin mr-2"></i> Cache Clear</a>
         </li>
     </ul>
 
@@ -38,5 +38,6 @@
                 <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
             </div>
         </li> --}}
+
     </ul>
 </nav>
