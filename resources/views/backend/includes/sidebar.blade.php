@@ -43,14 +43,14 @@
                         <p> Live Visit </p>
                     </a>
                 </li>  --}}
-                {{-- Logout --}}
-                {{--  <li class="nav-item">
+                <!-- Logout -->
+                  <li class="nav-item">
                     <a href="{{ route('admin.logout') }}"
                         class="nav-link">
                         <i class="nav-icon fas fa-sign-out-alt text-danger"></i>
                         <p> LOGOUT </p>
                     </a>
-                </li>  --}}
+                </li>
 
             </ul>
         </nav>

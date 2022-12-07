@@ -34,6 +34,8 @@ Route::prefix('admin')->group(function(){
         Route::get('/dashboard','dashboard')->name('admin.dashboard');
         Route::get('/blank','blank')->name('admin.blank');
         Route::get('/formdesign', 'formDesign')->name('admin.formdesign');
+        Route::get('/logout', 'logout')->name('admin.logout');
+        Route::get('/cache.clear', 'cacheClear')->name('admin.cache.clear');
     });
 });
 
